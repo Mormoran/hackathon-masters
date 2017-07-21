@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load staticfiles %}
 
 {% block sidebar %}
     {% for category in root_categories %}
@@ -10,7 +11,9 @@
     {% for category in subcategories %}
     <li class="category-name"><a href="{% url 'category' category.id %}">{{ category.name }}</a></li>
     {% endfor %}
-
+    <div>
+        <a class="twitter-timeline" href="https://twitter.com/richardadalton">Tweets by richardadalton</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
 {% endblock sidebar %}
 
 

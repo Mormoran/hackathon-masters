@@ -1,7 +1,80 @@
 {% extends "base.html" %}
+{% load staticfiles %}
 
+{% block sidebar %}
+<div>
+        <a class="twitter-timeline" href="https://twitter.com/richardadalton">Tweets by richardadalton</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+{% endblock sidebar %}
 
-<form action="search" method="get">
-    <input type="text" name="search_term">
-    <button type="submit">Search</button>
-</form>
+{% block content %}
+
+<header class="jumbotron hero-spacer">
+    <img src="{% static 'media/logowomens.jpg' %}" class="jumbo-background" alt="Get some booty!">
+    <h1>Get your booty pimped!</h1>
+    <p>Do you want your booty to look class? Get custombootyfied!</p>
+    <p><a class="btn btn-primary btn-large">Buy now!!</a>
+    </p>
+</header>
+<a href="https://twitter.com/intent/tweet?button_hashtag=underwear" class="twitter-hashtag-button" data-show-count="false">Tweet #underwear</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<div class="row text-center">
+    <div class="row">
+        <div class="col-lg-12">
+            <h3>Latest Products</h3>
+        </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6 hero-feature">
+        <div class="thumbnail">
+            <img src="{% static 'media/logomale.jpg' %}" alt="">
+            <div class="caption">
+                <h3>Male booty?</h3>
+                <p>Booty!</p>
+                <p>
+                    <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6 hero-feature">
+        <div class="thumbnail">
+            <img src="{% static 'media/thong1.jpeg' %}" alt="">
+            <div class="caption">
+                <h3>Feature Label</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>
+                    <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6 hero-feature">
+        <div class="thumbnail">
+            <img src="{% static 'media/male3.jpeg' %}" alt="">
+            <div class="caption">
+                <h3>Feature Label</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>
+                    <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6 hero-feature">
+        <div class="thumbnail">
+            <img src="{% static 'media/women2.jpeg' %}" alt="">
+            <div class="caption">
+                <h3>Feature Label</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>
+                    <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
